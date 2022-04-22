@@ -1,0 +1,7 @@
+body {
+  display: inline-block;
+  margin: auto;
+  padding: 0px;
+  border: solid lightgrey 1px;
+  background-image: url('/assets/images/background.jpg');
+}

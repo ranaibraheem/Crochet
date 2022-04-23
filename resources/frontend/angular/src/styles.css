@@ -1,13 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+/* *{
+  margin: 0;
+  padding: 0;
+} */
 body {
-  display: inline-block;
-  margin: auto;
+  /* display: flex;
+  margin: 0px;
   padding: 0px;
-  border: solid lightgrey 1px;
+  border: solid lightgrey 1px; */
   background-image: url("assets/images/background.jpg");
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
+  margin-top: 6em;
 }
 /* background image link: */
 /* https://www.pexels.com/photo/two-white-yarn-roll-beside-gold-scissor-4601048/ */

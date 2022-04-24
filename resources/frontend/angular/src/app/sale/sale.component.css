@@ -1,4 +1,4 @@
-.box {
+/* .box {
   margin: 50px;
   width: 220px;
   height: 220px;
@@ -71,4 +71,109 @@
   top: -23px;
   left: auto;
   right: -27px;
+} */
+p {
+  color: #fff;
+  font-family: fantasy;
+  font-size: 42px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgb(12, 82, 118, 0.663), 2px 2px 1px rgb(12, 82, 118, 0.663), 3px 3px 1px rgba(12, 82, 118, 0.663);
+  text-align: center;
+  padding-top: 100px;
+}
+
+.sign-section {
+  padding: 10em 0;
+  padding-top: 280px;
+}
+
+@-moz-keyframes sign-sway {
+  0% {
+    -moz-transform: translateX(-15%) rotate(3deg);
+    transform: translateX(-15%) rotate(3deg);
+  }
+  50% {
+    -moz-transform: translateX(15%) rotate(-3deg);
+    transform: translateX(15%) rotate(-3deg);
+  }
+  100% {
+    -moz-transform: translateX(-15%) rotate(3deg);
+    transform: translateX(-15%) rotate(3deg);
+  }
+}
+@-webkit-keyframes sign-sway {
+  0% {
+    -webkit-transform: translateX(-15%) rotate(3deg);
+    transform: translateX(-15%) rotate(3deg);
+  }
+  50% {
+    -webkit-transform: translateX(15%) rotate(-3deg);
+    transform: translateX(15%) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: translateX(-15%) rotate(3deg);
+    transform: translateX(-15%) rotate(3deg);
+  }
+}
+@keyframes sign-sway {
+  0% {
+    -moz-transform: translateX(-15%) rotate(3deg);
+    -ms-transform: translateX(-15%) rotate(3deg);
+    -webkit-transform: translateX(-15%) rotate(3deg);
+    transform: translateX(-15%) rotate(3deg);
+  }
+  50% {
+    -moz-transform: translateX(15%) rotate(-3deg);
+    -ms-transform: translateX(15%) rotate(-3deg);
+    -webkit-transform: translateX(15%) rotate(-3deg);
+    transform: translateX(15%) rotate(-3deg);
+  }
+  100% {
+    -moz-transform: translateX(-15%) rotate(3deg);
+    -ms-transform: translateX(-15%) rotate(3deg);
+    -webkit-transform: translateX(-15%) rotate(3deg);
+    transform: translateX(-15%) rotate(3deg);
+  }
+}
+.sign {
+  -moz-box-shadow: rgba(221, 188, 145, 0.75) 0 0 80px;
+  -webkit-box-shadow: rgba(17, 16, 16, 0.75) 0 0 80px;
+  box-shadow: rgba(235, 124, 7, 0.75) 0 0 80px;
+  -moz-animation: sign-sway 5s infinite;
+  -webkit-animation: sign-sway 5s infinite;
+  animation: sign-sway 5s infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  height: 300px;
+  width: 480px;
+  background: rgba(78, 38, 3, 0.587);
+  margin: 2em auto;
+  position: absolute;
+  margin-left: 5rem;
+  border-radius: 20px ;
+}
+.sign:before, .sign:after {
+  content: "";
+  display: block;
+  height: 35em;
+  bottom: 75%;
+  width: 2px;
+  background: rgba(139, 0, 0, 0.407);
+  position: absolute;
+}
+.sign:before {
+  left: 20%;
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.sign:after {
+  right: 20%;
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }

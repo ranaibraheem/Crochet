@@ -10,6 +10,8 @@ h1 {
   font-size: 3em;
   font-weight: bold;
   text-align: center;
+  opacity: 0.8;
+  text-shadow: 0 0 20px rgba(41, 1, 1, 0.887)
 }
 .products{
   display: inline-block;
@@ -17,7 +19,7 @@ h1 {
   justify-content: space-middle;
   align-items: center;
   margin-bottom: 1em;
-  margin-top:60em;
+  margin-top: 35em;
   width: 100%;
 }
 .products .prod-display .prod-row {

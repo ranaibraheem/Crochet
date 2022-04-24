@@ -10,7 +10,7 @@ nav {
   height: 100px;
   background-color: gray;
   z-index: 10;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
   opacity: 0.8;
 }
 nav ul {
@@ -43,6 +43,9 @@ nav ul li .borderb:hover{
   width:98%;
   cursor: pointer;
 }
+
+
+
 
 .search{
   position: float;

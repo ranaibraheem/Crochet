@@ -1,7 +1,13 @@
 /* * { box-sizing:border-box } */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400');
-body {background: url('https://dl.dropboxusercontent.com/u/330966/static/bg_cp01.jpg') no-repeat top center #e5e5e5;}
+body {
+  background: url('https://dl.dropboxusercontent.com/u/330966/static/bg_cp01.jpg') no-repeat top center #e5e5e5;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
 nav {
   position:fixed;
   top:0;

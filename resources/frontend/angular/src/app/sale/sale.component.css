@@ -177,3 +177,7 @@ p {
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
+.fixlink{
+  color:#666666;
+    text-decoration: none;
+}

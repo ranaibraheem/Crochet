@@ -1,14 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a [innerHTML]="brand" class="navbar-brand" href=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="centerLinks">
-        <li><span class="borderb">Home</span></li>
-        <li><span class="borderb">Collection</span></li>
-        <li><span class="borderb">Sale</span></li>
+        <li><span class="borderb"><a class="fixlink" href="">Home</a></span></li>
+        <li><span class="borderb"><a class="fixlink" href="collections">Collections</a></span></li>
+        <li><span class="borderb"><a class="fixlink" href="sales">Sales</a></span></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown

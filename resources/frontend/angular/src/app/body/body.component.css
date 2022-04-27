@@ -71,3 +71,8 @@ h1.hovering:hover{
   text-decoration: none;
   padding: 2rem;
 }
+.fixlink{
+  color:#666666;
+    text-decoration: none;
+}
+

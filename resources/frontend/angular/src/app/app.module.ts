@@ -13,6 +13,9 @@ import { BodyComponent } from './body/body.component';
 import { SaleComponent } from './sale/sale.component';
 import { TopComponent } from './top/top.component';
 import { HomeComponent } from './home/home.component';
+import { CollectionsComponent } from './collections/collections.component';
+import { SalesComponent } from './sales/sales.component';
+import { NewComponent } from './new/new.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +24,9 @@ const appRoutes: Routes = [
   { path: 'sale', component:SaleComponent },
   { path: 'navbar', component:NavbarComponent },
   { path: 'footer', component:FooterComponent },
+  { path: 'collections', component:CollectionsComponent },
+  { path: 'sales', component:SalesComponent },
+  { path: 'new', component:NewComponent }
   // { path: '', redirectTo: '/body', pathMatch: 'full' },
 
 
@@ -35,7 +41,10 @@ const appRoutes: Routes = [
     BodyComponent,
     SaleComponent,
     TopComponent,
-    HomeComponent
+    HomeComponent,
+    CollectionsComponent,
+    SalesComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,

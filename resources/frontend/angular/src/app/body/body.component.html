@@ -2,85 +2,20 @@
 <header>
 
 </header>
-<div class = "container-fluid products">
-  <div class = "prod-display container-flex">
-
-              <h1 class="hovering"><a class="fixlink" href="new">New and Featured Products</a></h1>
-      <div class = "prod-row row justify-content-center">
-          <div class = "prod-view col-2">
-              <div class = "prod-img">
-                  <a href = "assets/images/crochet75.jpg">
-                      <img src = "assets/images/crochet75.jpg"
-                           border = "0"
-                           alt = "Cupcakes in handle top favor boxes personalized with names and wedding date"></a>
-              </div><!-- End Prod Img -->
-              <div class = "prod-info">
-
-                  <p class = "price">$43.00</p>
-              </div><!-- End Prod Info -->
-          </div><!-- End Prod View -->
-          <div class = "prod-view col-2">
-              <div class = "prod-img">
-                  <a href = "assets/images/crochet42.jpg">
-                      <img src = "assets/images/crochet42.jpg"
-                           border = "0"
-                           alt = "Mens waxed canvas &amp; leather apron personalized with 3 initials"></a>
-              </div><!-- End Prod Img -->
-              <div class = "prod-info">
-
-                  <p class = "price">$38.49</p>
-              </div><!-- End Prod Info -->
-          </div><!-- End Prod View -->
-          <div class = "prod-view col-2">
-            <div class = "prod-img">
-                <a href = "assets/images/crochet24.jpg">
-                    <img src = "assets/images/crochet24.jpg"
-                         border = "0"
-                         alt = "Mens waxed canvas &amp; leather apron personalized with 3 initials"></a>
-            </div><!-- End Prod Img -->
-            <div class = "prod-info">
-
-                <p class = "price">$38.49</p>
-            </div><!-- End Prod Info -->
-        </div><!-- End Prod View -->
-
-          <div class = "prod-view col-2">
-              <div class = "prod-img">
-                  <a href = "assets/images/crochet46.jpg">
-                      <img src = "assets/images/crochet46.jpg"
-                           border = "0"
-                           alt = "Inserting card in personalized black finish photo gift card box"></a>
-              </div><!-- End Prod Img -->
-              <div class = "prod-info">
-
-                  <p class = "price">$39.00</p>
-              </div><!-- End Prod Info -->
-          </div><!-- End Prod View -->
-          <div class = "prod-view col-2">
-            <div class = "prod-img">
-                <a href = "assets/images/crochet12.jpg">
-                    <img src = "assets/images/crochet12.jpg"
-                         border = "0"
-                         alt = "Mens waxed canvas &amp; leather apron personalized with 3 initials"></a>
-            </div><!-- End Prod Img -->
-            <div class = "prod-info">
-
-                <p class = "price">$38.49</p>
-            </div><!-- End Prod Info -->
-        </div><!-- End Prod View -->
-
-          <div class = "prod-view col-2">
-              <div class = "prod-img">
-                  <a href = "assets/images/crochet27.jpg">
-                      <img src = "assets/images/crochet27.jpg"
-                           border = "0"
-                           alt = "Inserting card in personalized black finish photo gift card box"></a>
-              </div><!-- End Prod Img -->
-              <div class = "prod-info">
-
-                  <p class = "price">$39.00</p>
-              </div><!-- End Prod Info -->
-          </div><!-- End Prod View -->
-      </div><!-- End Prod Row -->
+<div class = "products block">
+  <div class = "prod-display">
+    <h1 class="hovering"><a class="fixlink" href="new">New and Featured Products</a></h1>
+    <div class = "prod-row row justify-content-center">
+      <div class = " container-flex prod-view col-md-3" *ngFor="let newCollection of newCollections">
+        <div class = "prod-img">
+          <a [href]="imagePath+newCollection.image">
+                    <img [src]="imagePath+newCollection.image" border = "0">
+          </a>
+        </div>
+        <div class = "prod-info">
+          <p class = "price"><b>Price:</b> $ {{newCollection.price}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

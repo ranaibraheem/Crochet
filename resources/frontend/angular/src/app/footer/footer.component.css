@@ -179,3 +179,11 @@ color: #ff5e14;
 font-size: 14px;
 color: #878787;
 }
+
+.navbar-brand{
+  color: #bab9b99d;
+  font-size: 2.5rem;
+  /* font-weight: 700; */
+  text-transform: uppercase;
+  text-shadow:rgb(72, 70, 70);
+}

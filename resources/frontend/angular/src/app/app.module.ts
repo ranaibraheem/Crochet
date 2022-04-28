@@ -16,21 +16,14 @@ import { HomeComponent } from './home/home.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { SalesComponent } from './sales/sales.component';
 import { NewComponent } from './new/new.component';
+import { DetailComponent } from './detail/detail.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'body', component:BodyComponent },
-  { path: 'top', component:TopComponent },
-  { path: 'sale', component:SaleComponent },
-  { path: 'navbar', component:NavbarComponent },
-  { path: 'footer', component:FooterComponent },
   { path: 'collections', component:CollectionsComponent },
   { path: 'sales', component:SalesComponent },
-  { path: 'new', component:NewComponent }
-  // { path: '', redirectTo: '/body', pathMatch: 'full' },
-
-
-
+  { path: 'new', component:NewComponent },
+  { path: 'detail/:id', component:DetailComponent }
 ]
 
 @NgModule({
@@ -44,7 +37,8 @@ const appRoutes: Routes = [
     HomeComponent,
     CollectionsComponent,
     SalesComponent,
-    NewComponent
+    NewComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

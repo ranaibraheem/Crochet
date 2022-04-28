@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BodyComponent implements OnInit {
 
   imagePath="assets/images/";
+  detailPath="detail/:id";
   newCollections = [
     {
       id: 1,
@@ -24,7 +25,7 @@ export class BodyComponent implements OnInit {
   {
       id: 3,
       name: 'Item 3',
-      image: 'crochet24.jpg',
+      image: 'crochet27.jpg',
       price: '50.00'
   },
   {
@@ -36,13 +37,7 @@ export class BodyComponent implements OnInit {
   {
       id: 5,
       name: 'Item 5',
-      image: 'crochet12.jpg',
-      price: '60.00'
-  },
-  {
-      id: 6,
-      name: 'Item 6',
-      image: 'crochet27.jpg',
+      image: 'crochet24.jpg',
       price: '65.00'
   }
   ]

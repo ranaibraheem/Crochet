@@ -35,12 +35,6 @@ export class NewComponent implements OnInit {
   {
       id: 5,
       name: 'Item 5',
-      image: 'crochet12.jpg',
-      price: '60.00'
-  },
-  {
-      id: 6,
-      name: 'Item 6',
       image: 'crochet27.jpg',
       price: '65.00'
   }

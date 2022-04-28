@@ -17,13 +17,15 @@ import { CollectionsComponent } from './collections/collections.component';
 import { SalesComponent } from './sales/sales.component';
 import { NewComponent } from './new/new.component';
 import { DetailComponent } from './detail/detail.component';
+import { ProductComponent } from './product/product.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'collections', component:CollectionsComponent },
   { path: 'sales', component:SalesComponent },
   { path: 'new', component:NewComponent },
-  { path: 'detail/:id', component:DetailComponent }
+  { path: 'detail/:id', component:DetailComponent },
+  { path: 'product', component:ProductComponent }
 ]
 
 @NgModule({
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
     CollectionsComponent,
     SalesComponent,
     NewComponent,
-    DetailComponent
+    DetailComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

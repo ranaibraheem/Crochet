@@ -13,7 +13,7 @@ export class BodyComponent implements OnInit {
     {
       id: 1,
       name: 'Item 1',
-      image: 'crochet75.jpg',
+      image: 'crochet50.jpg',
       price: '43.00'
     },
     {

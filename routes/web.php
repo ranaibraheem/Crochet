@@ -21,5 +21,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/angular', [App\Http\Controllers\AngularController::class, 'index'])->name('angular');
+
 
 Route::any('/{any}', [AngularController::class, 'index'])->where('any', '^(?!api).*$');

@@ -21,8 +21,11 @@
 
     <!-- declare our angular app and controller -->
 <body class="container" ng-app="commentApp" ng-controller="mainController">
+    @extends('angular')
+    <app-root></app-root>
+    <h2>Hello</h2>
     {{-- <div class="col-md-8 col-md-offset-2"> --}}
-     <body class="antialiased">
+     {{-- <body class="antialiased"> --}}
         {{-- <app-root></app-root>
         <img src="{{ asset('images/background.jpg') }}" alt="crochet" style="max-width: 3500px; max-height:900px"> --}}
     </body>

@@ -15,13 +15,13 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('angular');
 });
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/angular', [App\Http\Controllers\AngularController::class, 'index'])->name('angular');
+// Route::get('/angular', [App\Http\Controllers\AngularController::class, 'index'])->name('angular');
 
 
 Route::any('/{any}', [AngularController::class, 'index'])->where('any', '^(?!api).*$');

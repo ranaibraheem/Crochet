@@ -24,6 +24,8 @@
     @extends('angular')
     <app-root></app-root>
     <h2>Hello</h2>
+    <div ng-view> </div>
+
     {{-- <div class="col-md-8 col-md-offset-2"> --}}
      {{-- <body class="antialiased"> --}}
         {{-- <app-root></app-root>

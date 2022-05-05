@@ -8,6 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'category_id',
+        'name',
+    ];
+
+    public function user(){
+        return $this->hasOne(User::class, 'id', 'category_id');
+    }
+
+
+
 
     protected $table = 'products';
 

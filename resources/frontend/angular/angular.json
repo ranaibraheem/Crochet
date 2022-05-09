@@ -53,7 +53,10 @@
                 }
               ],
 
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "outputPath":"../../../public/assets/angular",
+              "deployUrl": "/assets/angular"
+
 
             },
             "development": {

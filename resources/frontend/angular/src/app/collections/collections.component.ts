@@ -35,7 +35,7 @@ export class CollectionsComponent implements OnInit {
   }
 
    getCollections(){
-    this.httpClient.get<any>('http://127.0.0.1:8000/api/products').subscribe(Response => {
+    this.httpClient.get<any>('http://127.0.0.1:8001/api/products').subscribe(Response => {
     this.items = Response.data;
     });
   }

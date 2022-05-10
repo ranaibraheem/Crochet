@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AngularController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -14,13 +15,13 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('angular');
-});
+// Route::get('/', function () {
+//     return view('angular');
+// });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::get('/angular', [App\Http\Controllers\AngularController::class, 'index'])->name('angular');
 
 

@@ -3,7 +3,7 @@
   <div class="card mb-2" style="max-width: 540px;" *ngFor="let item of items">
     <div class="row g-0">
       <div class="col-md-4">
-        <a [href]="item.image"><img [src]="item.image" class="img-fluid" alt="..."></a>
+        <img [src]="imagePath+item.image" class="img-fluid" alt="Crochet image">
       </div>
       <div class="col-md-8">
         <div class="card-body">

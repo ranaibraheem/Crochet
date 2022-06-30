@@ -6,3 +6,6 @@ body {
   background-repeat: no-repeat;
   margin-top: 6em;
 }
+:root{
+  overflow-x:hidden;
+}

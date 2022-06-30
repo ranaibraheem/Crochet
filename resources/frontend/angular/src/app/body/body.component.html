@@ -1,13 +1,11 @@
 <app-sale></app-sale>
 <div class = "products block">
   <div class = "prod-display">
-    <h1 class="hovering"><a class="fixlink" href="new">New and Featured Products</a></h1>
+    <h1 class="hovering"><a class="fixlink" routerLink="/new">New and Featured Products</a></h1>
     <div class = "prod-row row justify-content-center">
       <div class = " container-flex prod-view col-md-2" *ngFor="let newCollection of newCollections; let id;">
         <div class = "prod-img">
-          <a [href]="imagePath+newCollection.image">
-            <img [src]="imagePath+newCollection.image">
-          </a>
+          <img [src]="imagePath+newCollection.image">
         </div>
         <div class = "prod-info">
           <p class = "price">

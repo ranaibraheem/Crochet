@@ -5,9 +5,8 @@ export class Collection{
   constructor(
     public id:number,
     public name:string,
-    public price:number,
+    public location:string,
     public image:string,
-    public description:string
   ){
   }
 }

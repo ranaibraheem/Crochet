@@ -1,19 +1,17 @@
 <app-sale></app-sale>
 <div class = "products block">
   <div class = "prod-display">
-    <h1 class="hovering"><a class="fixlink" routerLink="/new">New and Featured Products</a></h1>
+    <h1 class="hovering"><a class="fixlink" routerLink="/collections">Top Crochets</a></h1>
     <div class = "prod-row row justify-content-center">
-      <div class = " container-flex prod-view col-md-2" *ngFor="let newCollection of newCollections; let id;">
+      <div class=" container-flex prod-view col-md-2" *ngFor="let i of [0,23,41,45, 64]">
         <div class = "prod-img">
-          <img [src]="imagePath+newCollection.image">
+          <img [src]="imagePath+items[i].image" style="height: 280px; width:400px;">
         </div>
         <div class = "prod-info">
-          <p class = "price">
-            <a class="fixlinkred" [routerLink]="detailPath+newCollection.id">
-              <span><b>Name: </b>{{newCollection.name}}</span><br>
-              <span><b>Price: </b> $ {{newCollection.price}}</span>
-            </a>
-          </p>
+          <a class="fixlinkred" [routerLink]="detailPath+items[i].id">
+            <span><b>WHAT: </b>{{items[i].name}}</span><br>
+            <span><b>WHERE: </b>{{items[i].location}}</span>
+          </a>
         </div>
       </div>
     </div>

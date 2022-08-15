@@ -14,14 +14,12 @@ import { SaleComponent } from './sale/sale.component';
 import { TopComponent } from './top/top.component';
 import { HomeComponent } from './home/home.component';
 import { CollectionsComponent } from './collections/collections.component';
-import { SalesComponent } from './sales/sales.component';
 import { NewComponent } from './new/new.component';
 import { DetailComponent } from './detail/detail.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'collections', component:CollectionsComponent },
-  { path: 'sales', component:SalesComponent },
   { path: 'new', component:NewComponent },
   { path: 'detail/:id', component:DetailComponent },
 ]
@@ -36,7 +34,6 @@ const appRoutes: Routes = [
     TopComponent,
     HomeComponent,
     CollectionsComponent,
-    SalesComponent,
     NewComponent,
     DetailComponent,
   ],

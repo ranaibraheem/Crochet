@@ -1,3 +1,37 @@
 <app-navbar></app-navbar>
-<h1>Here is the detail page</h1>
+<section>
+  <div class="container responsive">
+    <div *ngFor="let item of items; let i=index">
+      <div *ngIf="item.id == itemId">
+        <div class="row">
+          <div class="white-box col-lg-6 col-md-12 col-sm-12">
+            <img (click)="showHide()" id="imageresource" [src]="imagePath+item.image" class="detailImage img-fluid mx-auto d-block">
+            <div [style.display]="showModal ? 'block' : 'none'" class="modal modal-fullscreen" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="hover_bkgr" *ngIf="showModal" appOutside (click)="ClickedOut($event)">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn btn-default" data-dismiss="modal" (click)="showHide()">&#x2717;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img id="imageresource" [src]="imagePath+item.image" class="popupImage img-fluid mx-auto d-block">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text white-box col-lg-6 col-md-12 col-sm-12">
+            <p class="text-center"><b>WHAT: </b>{{item.name}}</p>
+            <p class="text-center"><b>WHERE: </b>{{item.location}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-back">
+      <a routerLink="/collections" class="back"><span>&#171;</span>
+      </a>
+    </div>
+  </div>
+</section>
 <app-footer></app-footer>

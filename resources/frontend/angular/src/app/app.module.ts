@@ -3,8 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-
-
+import { NgxPaginationModule} from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { CollectionsComponent } from './collections/collections.component';
 import { DetailComponent } from './detail/detail.component';
 import { CrochetComponent } from './crochet/crochet.component';
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -36,6 +37,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MdbCollapseModule,
+    NgxPaginationModule,
     RouterModule.forRoot(appRoutes, {
       // In order to get anchor / fragment scrolling to work at all, we need to
       // enable it on the router.
@@ -58,7 +61,6 @@ const appRoutes: Routes = [
       scrollPositionRestoration: 'top' }),
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

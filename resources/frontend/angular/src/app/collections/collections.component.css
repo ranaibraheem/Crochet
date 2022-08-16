@@ -5,7 +5,7 @@
   align-content: space-between;
   flex-wrap: wrap;
   background-color: black;
-  padding: 2em;
+  padding: 3em;
 }
 .card{
   border-radius: 20px;
@@ -19,7 +19,7 @@
 .card:hover{
   color:white;
   background-color: rgb(1, 67, 72);
-  box-shadow: 0 30px 90px #f9efefe4;
+  box-shadow: 0 90px 100px #f9efefe4;
   transform: translateY(-1em);
   border-radius: 20px;
 }
@@ -28,4 +28,20 @@ img{
   height: 280px;
   border-radius: 20px !important;
   padding: 0.5em;
+}
+.paginate{
+  text-align: center;
+  color:beige;
+  margin:auto;
+}
+.paginate:hover{
+  color:black;
+  background-color: rgba(108, 0, 0, 0.899) !important;
+  border-radius:10px;
+}
+
+.my-pagination ::ng-deep .ngx-pagination .current {
+  background: rgba(87, 0, 0, 0.782);
+  border-radius: 10px;
+  font-size: 1.5rem;
 }
